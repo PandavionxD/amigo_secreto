@@ -32,3 +32,12 @@ const mostrarAmigos = () => {
     //   ? Mostramos los amigos en el HTML
     mostrarAmigos();
   };
+
+  // ? AQUI VA LA FUNCION PARA SORTEAR AMIGOS - que se ejecuta al hacer click en el botón "Sortear amigo"
+const sortearAmigo = () => {
+    // ? Agarramos un indice al azar del array de amigos
+    let amigoSorteado = amigos[Math.floor(Math.random() * amigos.length)];
+    //   ? Mostramos el amigo sorteado en el HTML
+    document.getElementById("resultado").innerHTML = amigoSorteado;
+  };
+  
